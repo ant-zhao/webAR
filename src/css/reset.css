@@ -1,0 +1,203 @@
+/*reset css*/
+*,::before,::after{
+    margin:0;
+    padding:0;
+    /*清除移动端默认的点击高亮效果*/
+    -webkit-tap-highlight-color:transparent;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    background-color: #F5F5F5;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color:transparent; /*解决按钮点击出现蓝色背景*/
+    font-family: PingFangTC-Regular, sans-serif;
+    position: relative;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button ,textarea,iframe,video{
+    border: none;
+    outline-style: none;
+}
+
+a:link,a:visited{color:#ffffff;text-decoration:none;}
+a:hover{color:#ffffff;text-decoration:none;}
+a:active{color:#ffffff;}
+
+ul,li,ol,dl{
+    list-style: none;
+}
+
+input{
+    border:none;
+    outline:none;
+    /*清除移动端默认的表单样式*/
+    -webkit-appearance:none;
+}
+
+button{
+    border:none;
+    outline: none;
+}
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
+}
+.df{
+	display: flex;
+}
+.center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.wCenter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.ohide{
+    opacity: 0;
+    filter:alpha(opacity=0); 
+}
+.clearfix::before,.clearfix::after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+.center{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.wCenter{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.hCenter{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.tCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.tHorCenter{
+    position: absolute;
+    top: 50%;
+     transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.tVerCenter{
+    position: absolute;
+    left: 50%;
+	transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.al-center{
+	display: flex;
+	align-items:center; /*垂直居中*/
+}
+.b-sizing{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+//屏幕尺寸
+@media  screen and (max-width: 375px) {
+    html{
+        font-size: 100px;
+    }
+}
+@media screen and (min-width: 750px) {
+    html{
+        font-size: 120px;
+    }
+}
+@media  screen and (max-width: 299px) {
+    html{
+        font-size: 68px;
+    }
+}
+@media  screen and (min-width: 299px) {
+    html{
+        font-size: 68px;
+    }
+}
+@media  screen and (min-width: 320px) {
+    html{
+        font-size: 85px;
+    }
+}
+@media  screen and (min-width: 350px) {
+    html{
+        font-size: 90px;
+    }
+}
+
+@media  screen and (min-width: 370px) {
+    html{
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html{
+        font-size: 26.66666667vw;
+    }
+}
+.noSelect{
+    -webkit-touch-callout:none;  /*系统默认菜单被禁用*/   
+    -webkit-user-select:none; /*webkit浏览器*/   
+    -khtml-user-select:none; /*早期浏览器*/   
+    -moz-user-select:none;/*火狐*/   
+    -ms-user-select:none; /*IE10*/   
+    user-select:none;
+}
